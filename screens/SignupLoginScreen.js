@@ -27,7 +27,7 @@ export default class SignupLoginScreen extends React.Component {
     };
   }
 
-  userSignUp = (username, password, confirmPassword) => {
+  userSignUp = (username, password) => {
       firebase
         .auth()
         .createUserWithEmailAndPassword(username, password)
